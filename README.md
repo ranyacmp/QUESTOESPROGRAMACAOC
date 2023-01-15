@@ -1,6 +1,6 @@
 # Questões resolvidas de lógica de programação na linguagem C
 
->[Sequenciais]()
+>[Sequenciais](https://github.com/ranyacmp/QUESTOESPROGRAMACAOC/tree/master/SEQUENCIAIS)
 
 >[Condicionais]()
 
