@@ -26,7 +26,7 @@ main(){
 
     float difquadrado= (pow(num1,2) - pow(num2,2));
 
-    printf("Diferença dos quadrados: %.2f \n", difquadrado);
+    printf("Diferenca dos quadrados: %.2f \n", difquadrado);
 
 
     return 0;
