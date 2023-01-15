@@ -12,6 +12,22 @@ com conteúdo zero.
 
 main(){
 
+    float p; 
+    printf("Digite a quantidade da pesca no dia em kilos: \n");
+    scanf("%f", &p);
+
+    int e=0;
+    float m=0;
+    if(p > 50){
+        e= p - 50; 
+        m = e * 5;
+        printf("Excesso: %d \n", e);
+        printf("Valor da multa: %.2f \n", m);
+    }else{
+        printf("Nao ha multas. \n");
+        printf("E = %d M = %.0f. \n",e, m);
+    }
+
 
     return 0;
 }
