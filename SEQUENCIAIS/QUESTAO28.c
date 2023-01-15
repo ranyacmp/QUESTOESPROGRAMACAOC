@@ -20,3 +20,25 @@ de acordo com as constantes gravitacionais de cada planeta (estas constantes est
     
     Depois de fazer as conversões, imprima o quanto as pessoas pesariam se estivessem em cada planeta.
 */
+
+#include <stdio.h> 
+
+main(){
+
+    float peso;
+    printf("Digite um peso em newtons: \n");
+    scanf("%f", &peso);
+
+    printf("Peso em Mercurio: %.2f \n", (peso * 0.3649337410));
+    printf("Peso em Venus: %.2f \n", (peso * 0.9041794087));
+    printf("Peso em Marte: %.2f \n", (peso * 0.3812436289));
+    printf("Peso na Lua: %.2f \n", (peso * 0.1651376146));
+    printf("Peso em Jupiter: %.2f \n", (peso * 2.6513761467));
+    printf("Peso em Saturno: %.2f \n", (peso * 1.1386340468));
+    printf("Peso em Urano: %.2f \n", (peso * 1.0693170234));
+    printf("Peso em Netuno: %.2f \n", (peso * 1.3506625891));
+    printf("Peso em Plutao: %.2f \n", (peso * 0.2252803261));
+
+
+    return 0; 
+}
