@@ -8,3 +8,23 @@ de cerveja consumidos durante o período.
     - Supondo que cada pack custa R$18.00, informar também o gasto em cerveja do referido bloco;
 
 */
+
+#include <stdio.h> 
+
+main(){
+
+    int pack; 
+    printf("Digite a quantidade de packs consumidos: \n");
+    scanf("%d", &pack);
+
+    int latas= pack * 12;
+    int mls= latas * 350; 
+    float litros= mls / 1000;
+    float resto = mls % 1000; 
+    float custo= pack * 18;
+
+    printf("Valor gasto: %.2f \n", custo);
+    printf("Foram consumidos %.2f litros e %.2f mls \n", litros, resto);
+    
+    return 0; 
+}
