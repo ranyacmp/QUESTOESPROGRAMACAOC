@@ -15,3 +15,30 @@ em 3 situações:
     
     ps: para arredondar, use a funcão ceil() da biblioteca math.h
 */
+
+#include <stdio.h> 
+#include <math.h>
+
+
+main(){
+
+    float area;
+    printf("Digite a area em metros quadrados: \n");
+    scanf("%f", &area);
+
+    int litros= area / 6;
+
+    float latas= litros / 18;
+    float valor1= ceil(latas) * 80; 
+    printf("%d litros, comprando apenas latas de 18L sai a %.2f reais \n", litros, valor1);
+
+    float galoes= litros / 3.6;
+    float valor2= ceil(galoes) * 25;
+    printf("%d litros, comprando apenas galoes de 3,6L sai a %.2f reais \n", litros, valor2);
+
+    float resto= litros % 18;
+    float valor3= valor1 + (resto * 25);
+    printf("%d litros, comprando latas e galoes sao %.2f latas e %.2f galoes e sai a %.2f reais \n", litros, latas, resto, valor3);
+
+    return 0; 
+}
