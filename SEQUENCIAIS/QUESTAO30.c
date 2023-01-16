@@ -14,3 +14,20 @@ em metros) até o horizonte é dada aproximadamente pela fórmula
         
         [Alturas de alguns locais interessantes:](https://www.notion.so/f91b7434150544578380437014911bdd)
 */
+
+
+#include <stdio.h>
+
+main(){
+    
+    float h;
+    printf("Digite uma altura: \n");
+    scanf("%f", &h);
+
+    float d= sqrt((pow(h, 2)) + (2 * 6378150 * h) );
+
+    printf("Esta a %.2f do horizonte. \n", d);
+
+
+    return 0;
+}
