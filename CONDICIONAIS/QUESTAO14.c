@@ -11,3 +11,38 @@ CODIGO DO PRODUTO   PREÇO UNITARIO
         7623             6,45
 
 */
+
+#include <stdio.h> 
+
+main(){
+
+        int cod;
+        printf("Digite o codigo do produto: \n");
+        scanf("%d", &cod);
+
+        int quantidade; 
+        printf("Digite a quantidade comprada: \n");
+        scanf("%d", &quantidade);
+
+        float total=0; 
+
+        if(cod == 1001){
+                total = quantidade * 5.32;
+        }
+        if(cod == 1324){
+                total = quantidade * 6.45;
+        }
+        if(cod == 6548){
+                total = quantidade * 2.37;
+        }
+        if(cod == 9001){
+                total = quantidade * 5.32;
+        }
+        if(cod == 7623){
+                total = quantidade * 6.45;
+        }
+
+        printf("Valor total: %.2f reais. \n", total);
+
+  return 0;               
+}
