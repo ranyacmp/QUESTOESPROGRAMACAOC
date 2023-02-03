@@ -9,3 +9,33 @@ e a diferença.
      102        2        20%
      103        3        30%
 */
+
+#include <stdio.h> 
+
+main(){
+    
+    int tipo;
+    printf("Digite o tipo do funcionairo: \n");
+    scanf("%d", &tipo);
+
+    float salario; 
+    printf("Digite o valor do salario: \n");
+    scanf("%f", &salario);
+
+
+    float aumento= 0; 
+
+    if(tipo == 1){
+        aumento = (salario * 10) / 100; 
+    }else if(tipo == 2){
+        aumento = (salario * 20) / 100; 
+    }else if(tipo == 3){
+        aumento = (salario * 30) / 100; 
+    }else{
+        aumento = (salario * 40) / 100; 
+    }
+
+    printf("Salario final: %.2f \n", (salario + aumento));
+
+    return 0; 
+}
